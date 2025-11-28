@@ -14,9 +14,6 @@ details[open] {
     width: 300px;
     /* ouvert */
 }
-.accordeon{
-    display: flex;
-}
 
 .accordeon>details>summary {
     list-style: none;
@@ -25,4 +22,16 @@ details[open] {
 .accordeon>details>summary::marker,
 .accordeon>details>summary::-webkit-details-marker {
     display: none;
+}
+
+.accordeon>details>summary::before {
+    position: relative;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-left: 20px solid pink;
+    top: 0;
+    left: 280px;
+    transition: transform 2s;
 }

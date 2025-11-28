@@ -1,3 +1,19 @@
 /**
 * Accordeon
 */
+details {
+    width: 100px;
+        overflow: hidden;
+        transition: width 2s;
+    
+        display: flex;
+    /* fermé et ouvert */
+}
+
+details[open] {
+    width: 300px;
+    /* ouvert */
+}
+.accordeon{
+    display: flex;
+}
